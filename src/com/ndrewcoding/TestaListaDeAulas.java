@@ -15,7 +15,7 @@ public class TestaListaDeAulas {
         aulas.add(segundaAula);
         aulas.add(terceiraAula);
 
-        System.out.println(aulas);
+        aulas.forEach(System.out::println);
 
     }
 }
