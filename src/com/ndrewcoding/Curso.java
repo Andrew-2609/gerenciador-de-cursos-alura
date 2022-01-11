@@ -1,6 +1,7 @@
 package com.ndrewcoding;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class Curso {
@@ -14,6 +15,10 @@ public class Curso {
         this.instrutor = instrutor;
     }
 
+    public void adicionar(Aula aula) {
+        aulas.add(aula);
+    }
+
     public String getNome() {
         return nome;
     }
@@ -23,7 +28,7 @@ public class Curso {
     }
 
     public List<Aula> getAulas() {
-        return aulas;
+        return Collections.unmodifiableList(aulas);
     }
 
 }
