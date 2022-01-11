@@ -35,4 +35,9 @@ public class Curso {
         return Collections.unmodifiableList(aulas);
     }
 
+    @Override
+    public String toString() {
+        return "Curso(nome: " + nome + ", instrutor: " + instrutor + ", aulas: " + aulas.size() + ")";
+    }
+
 }

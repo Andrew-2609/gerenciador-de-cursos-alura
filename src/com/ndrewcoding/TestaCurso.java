@@ -21,5 +21,7 @@ public class TestaCurso {
         System.out.println("Exibindo aulas ordenadas:\n" + aulasMutaveis);
         System.out.println("Duração total do curso: " + javaColecoes.getDuracaoTotal() + " minutos.");
 
+        System.out.println(javaColecoes);
+
     }
 }
