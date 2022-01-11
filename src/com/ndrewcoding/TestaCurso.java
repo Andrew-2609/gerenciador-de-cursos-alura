@@ -19,7 +19,7 @@ public class TestaCurso {
         Collections.sort(aulasMutaveis);
 
         System.out.println("Exibindo aulas ordenadas:\n" + aulasMutaveis);
-        System.out.println("Duração total do curso: " + javaColecoes.getTempoTotal() + " minutos.");
+        System.out.println("Duração total do curso: " + javaColecoes.getDuracaoTotal() + " minutos.");
 
     }
 }
