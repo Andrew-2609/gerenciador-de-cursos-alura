@@ -1,6 +1,6 @@
 package com.ndrewcoding;
 
-public class Aula {
+public class Aula implements Comparable<Aula> {
 
     private String titulo;
     private int duracao;
@@ -16,6 +16,11 @@ public class Aula {
 
     public int getDuracao() {
         return duracao;
+    }
+
+    @Override
+    public int compareTo(Aula aula) {
+        return this.titulo.compareTo(aula.getTitulo());
     }
 
     @Override
