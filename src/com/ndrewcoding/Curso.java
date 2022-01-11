@@ -19,6 +19,10 @@ public class Curso {
         aulas.add(aula);
     }
 
+    public int getTempoTotal() {
+        return aulas.stream().mapToInt(Aula::getDuracao).sum();
+    }
+
     public String getNome() {
         return nome;
     }
