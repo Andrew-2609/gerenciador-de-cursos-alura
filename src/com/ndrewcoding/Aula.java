@@ -22,4 +22,5 @@ public class Aula {
     public String toString() {
         return "Aula(" + "título: " + this.titulo + ", duração: " + this.duracao + ")";
     }
+
 }
