@@ -1,0 +1,6 @@
+# IntelliJ IDEA
+.idea/
+gerenciador-de-cursos-alura.iml
+
+# Generated files
+out/
