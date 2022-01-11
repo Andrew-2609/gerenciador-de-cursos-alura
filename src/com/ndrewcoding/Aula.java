@@ -18,4 +18,8 @@ public class Aula {
         return duracao;
     }
 
+    @Override
+    public String toString() {
+        return "Aula(" + "título: " + this.titulo + ", duração: " + this.duracao + ")";
+    }
 }
