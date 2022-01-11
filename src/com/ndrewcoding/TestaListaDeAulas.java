@@ -1,6 +1,7 @@
 package com.ndrewcoding;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class TestaListaDeAulas {
     public static void main(String[] args) {
@@ -14,6 +15,11 @@ public class TestaListaDeAulas {
         aulas.add(primeiraAula);
         aulas.add(segundaAula);
         aulas.add(terceiraAula);
+
+        aulas.forEach(System.out::println);
+
+        Collections.sort(aulas);
+        System.out.println("--Após ordenar por *título*--");
 
         aulas.forEach(System.out::println);
 
