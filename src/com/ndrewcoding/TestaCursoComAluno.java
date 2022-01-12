@@ -15,9 +15,11 @@ public class TestaCursoComAluno {
 
         javaColecoes.matricular(primeiroAluno);
         javaColecoes.matricular(segundoAluno);
-        javaColecoes.matricular(terceiroAluno);
+        // javaColecoes.matricular(terceiroAluno);
 
         javaColecoes.getAlunos().forEach(System.out::println);
+
+        System.out.println("O aluno " + terceiroAluno.getNome() + " está matriculado? " + javaColecoes.estaMatriculado(terceiroAluno));
 
     }
 }
