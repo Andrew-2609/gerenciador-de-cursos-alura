@@ -32,6 +32,10 @@ public class Curso {
         return alunos.contains(aluno);
     }
 
+    public Aluno buscarPorMatricula(int matricula) {
+        return matriculaParaAluno.get(matricula);
+    }
+
     public String getNome() {
         return nome;
     }
