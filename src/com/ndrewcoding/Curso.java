@@ -18,6 +18,10 @@ public class Curso {
         aulas.add(aula);
     }
 
+    public void matricular(Aluno aluno) {
+        alunos.add(aluno);
+    }
+
     public int getDuracaoTotal() {
         return aulas.stream().mapToInt(Aula::getDuracao).sum();
     }
