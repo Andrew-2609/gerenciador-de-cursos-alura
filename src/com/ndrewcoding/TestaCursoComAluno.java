@@ -1,5 +1,8 @@
 package com.ndrewcoding;
 
+import java.util.Iterator;
+import java.util.Set;
+
 public class TestaCursoComAluno {
     public static void main(String[] args) {
 
@@ -17,7 +20,16 @@ public class TestaCursoComAluno {
         javaColecoes.matricular(segundoAluno);
         // javaColecoes.matricular(terceiroAluno);
 
-        javaColecoes.getAlunos().forEach(System.out::println);
+        /*javaColecoes.getAlunos().forEach(System.out::println);*/
+
+        // Legacy code
+        Set<Aluno> alunos = javaColecoes.getAlunos();
+        Iterator<Aluno> iterator = alunos.iterator();
+        //noinspection WhileLoopReplaceableByForEach
+        while (iterator.hasNext()) {
+            Aluno proximoAluno = iterator.next();
+            System.out.println(proximoAluno);
+        }
 
         System.out.println("O aluno " + terceiroAluno.getNome() + " está matriculado? " + javaColecoes.estaMatriculado(terceiroAluno));
 
