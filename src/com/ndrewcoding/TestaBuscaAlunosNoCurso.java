@@ -17,5 +17,7 @@ public class TestaBuscaAlunosNoCurso {
         alemaoA1.matricular(segundoAluno);
         alemaoA1.matricular(terceiroAluno);
 
+        System.out.println(alemaoA1.buscarPorMatricula(3));
+
     }
 }
