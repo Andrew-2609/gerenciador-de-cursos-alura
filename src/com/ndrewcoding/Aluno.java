@@ -18,4 +18,8 @@ public class Aluno {
         return numeroDeMatricula;
     }
 
+    @Override
+    public String toString() {
+        return "Aluno(nome: " + nome + ", numero de matricula: " + numeroDeMatricula + ")";
+    }
 }
