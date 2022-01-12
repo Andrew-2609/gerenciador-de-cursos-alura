@@ -26,6 +26,10 @@ public class Curso {
         return aulas.stream().mapToInt(Aula::getDuracao).sum();
     }
 
+    public boolean estaMatriculado(Aluno aluno) {
+        return alunos.contains(aluno);
+    }
+
     public String getNome() {
         return nome;
     }
