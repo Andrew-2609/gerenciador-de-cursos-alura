@@ -33,6 +33,8 @@ public class Curso {
     }
 
     public Aluno buscarPorMatricula(int matricula) {
+        if (!matriculaParaAluno.containsKey(matricula))
+            throw new NoSuchElementException("Não há nenhum aluno com a matrícula: " + matricula);
         return matriculaParaAluno.get(matricula);
     }
 
