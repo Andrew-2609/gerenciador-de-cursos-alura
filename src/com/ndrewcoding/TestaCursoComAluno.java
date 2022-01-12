@@ -21,5 +21,11 @@ public class TestaCursoComAluno {
 
         System.out.println("O aluno " + terceiroAluno.getNome() + " está matriculado? " + javaColecoes.estaMatriculado(terceiroAluno));
 
+        System.out.println("\n---Testando equals() e hashcode()---");
+        System.out.println("O primeiro aluno é igual ao novo objeto Aluno criado?");
+        System.out.println(primeiroAluno.equals(new Aluno("Andrew Monteiro", 1)));
+        System.out.println("O novo objeto Aluno está contido no Set?");
+        System.out.println(javaColecoes.getAlunos().contains(new Aluno("Andrew Monteiro", 1)));
+
     }
 }
