@@ -19,6 +19,11 @@ public class Aluno {
     }
 
     @Override
+    public boolean equals(Object obj) {
+        return obj instanceof Aluno && nome.equals(((Aluno) obj).getNome()) && numeroDeMatricula == ((Aluno) obj).getNumeroDeMatricula();
+    }
+
+    @Override
     public String toString() {
         return "Aluno(nome: " + nome + ", numero de matricula: " + numeroDeMatricula + ")";
     }
