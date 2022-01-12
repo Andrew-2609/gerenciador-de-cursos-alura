@@ -28,4 +28,9 @@ public class Aluno {
         return "Aluno(nome: " + nome + ", numero de matricula: " + numeroDeMatricula + ")";
     }
 
+    @Override
+    public int hashCode() {
+        return nome.hashCode();
+    }
+
 }
