@@ -26,6 +26,9 @@ public class TestaCursoComAluno {
         System.out.println(primeiroAluno.equals(new Aluno("Andrew Monteiro", 1)));
         System.out.println("O novo objeto Aluno está contido no Set?");
         System.out.println(javaColecoes.getAlunos().contains(new Aluno("Andrew Monteiro", 1)));
+        System.out.println("Hash code do:");
+        System.out.println("- primeiroAluno: " + primeiroAluno.hashCode());
+        System.out.println("- novo objeto Aluno: " + new Aluno("Andrew Monteiro", 1).hashCode());
 
     }
 }
